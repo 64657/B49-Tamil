@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+var method = "GET";
+var url = "https://restcountries.com/v3.1/all";
+
+xhr.open(method, url);
+
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    var details = JSON.parse(xhr.responseText);
+
+    var countriesWithLowPopulation = details.filter(function(country) {
+      return country.population < 200000;
+    });
+    console.log(countriesWithLowPopulation);
+  } else {
+    console.log("Request failed", xhr.status);
+  }
+};
+
+xhr.send();
+</script>
+  </body>
+</html>
