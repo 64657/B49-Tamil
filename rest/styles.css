@@ -1,0 +1,111 @@
+h2 {
+    text-align: center;
+    color: #555;
+    margin-top: 50px;
+  }
+  
+  #dataContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Set a fixed height for the images within the card */
+  .card img {
+    height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .species-info {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .btn-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn-fetch {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .species-section {
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .countries-section {
+    background-color: #c8e6c9;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .regions-section {
+    background-color: #ffccbc;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .nav-link {
+        cursor: pointer;
+      }
+  
+      .home-section {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+  
+      .home-section h3 {
+        color: #333;
+      }
+  
+      .home-section p {
+        font-size: 18px;
+      }
+  
+      .species-list {
+        list-style: none;
+        padding: 0;
+      }
+  
+      .species-list-item {
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
