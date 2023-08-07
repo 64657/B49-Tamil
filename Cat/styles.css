@@ -1,0 +1,39 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  margin-top: 50px;
+}
+
+#dataContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
